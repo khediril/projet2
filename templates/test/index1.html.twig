@@ -1,0 +1,18 @@
+{% extends 'mabase.html.twig' %}
+
+{% block titre %}
+    <h1> Page principale</h1>
+{% endblock %}
+
+{% block main %}
+<img src="{{ asset('images/esprit.png') }}">
+           {{ inst }} <br>
+
+           {% for etud in etuds %}
+            {{ etud }} <br>
+           {% endfor %}
+
+
+<hr>
+<a href="{{ path('app_somme',{'nb1':100 ,'nb2':200 }) }}">aller a la page somme           
+{% endblock %}

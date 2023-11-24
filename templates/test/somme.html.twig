@@ -1,0 +1,13 @@
+{% extends 'mabase.html.twig' %}
+
+
+{% block titre %}
+               <h1> Page principale</h1>
+ {% endblock %}
+            
+{% block main %}
+  <h1> Somme de deux nombres </h1>
+  la somme de {{ nb1 }} et {{ nb2 }} est : {{ somme }}
+
+<a href="{{ path('app_test')}}"> aller a la page test </a>
+{% endblock %}
